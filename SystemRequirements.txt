@@ -1,0 +1,17 @@
+Basic Hardware Requirements-
+1. Atleast 4GB RAM (8GB is preferred)
+2. Core i3 Processor (Core i5 Preferred)
+3. Atleast 256GB SSD / 500GB HDD
+
+Operating System-
+1. Linux(Recommended) (Ubuntu, CentOS, Fedora)
+2. Windows(Windows 10, 11)
+3. OSx
+
+Software Tools-
+1. Editor (Notepad, Notepad++, Editplus, SublimeText, VSCode etc.)
+2. IDE (IntelliJ Idea, Eclipse, NetBeans)
+3. Updated Browser(Chrome is recommended, Mozilla, edge)
+4. Java Installation(Java 8 is recommended)
+5. MySQL Installation(MySQL Updated Version)5.x
+6. Postman(for API testing)
