@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML FORM Attributes</title>
+</head>
+<body>
+	<form>
+		<div>
+			<!-- <label>USER ID</label> -->
+			<input type="hidden" name="userid" value="1001">
+		</div>
+
+		<div>
+			<label>Full Name</label>
+			<input type="text" name="fullname" required>
+		</div>
+
+		<div>
+			<label>Mobile Number</label>
+			<input type="text" name="mobileno" maxlength="10" required>
+		</div>
+
+		<div>
+			<label>Email</label>
+			<input type="email" name="email" value="user@example.com" readonly>
+		</div>
+
+		<div>
+			<label>City</label>
+			<input type="text" name="city" value="Solapur" disabled>
+		</div>
+
+		<div>
+			<input type="submit">
+		</div>
+	</form>
+</body>
+</html>

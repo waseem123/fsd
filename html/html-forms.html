@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Html Forms</title>
+</head>
+<body>
+	<form>
+		<div>
+			<label>First Name</label>
+			<input type="text" name="fname" placeholder="First name">
+		</div>
+
+		<div>
+			<label>Last Name</label>
+			<input type="text" name="lname" placeholder="last name">
+		</div>
+
+		<div>
+			<label>City</label>
+			<input type="text" name="city" placeholder="city">
+		</div>
+		<div>
+			<label>Mobile Number</label>
+			<input type="number" name="mobileno" placeholder="Mobile Number">
+		</div>
+		<div>
+			<label>Email</label>
+			<input type="email" name="email" placeholder="Email">
+		</div>
+		<div>
+			<label>Password</label>
+			<input type="password" name="password" placeholder="Password">
+		</div>
+
+		<div>
+			<label>Date OF Birth</label>
+			<input type="date" name="dob" placeholder="Date Of Birth">
+		</div>
+
+		<div>
+			<label>Time</label>
+			<input type="time" name="time" placeholder="Time">
+		</div>
+
+		<div>
+			<label>Color</label>
+			<input type="color" name="color" placeholder="COlor">
+		</div>
+
+		<div>
+			<label>File</label>
+			<input type="file" name="file" placeholder="file">
+		</div>
+
+		<div>
+			<label>State</label>
+			<select name="state" multiple>
+				<option value="">Select State</option>
+				<option value="MH">Maharashtra</option>
+				<option value="KA">Karnataka</option>
+				<option value="JK">Jammu Kashmir</option>
+				<option value="HR">Hariyana</option>
+				<option value="UP">Uttar Pradesh</option>
+				<option value="MP">Madhya Pradesh</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="male">Male</label>
+			<input type="radio" name="gender" id="male">
+
+			<label for="female">Female</label>
+			<input type="radio" name="gender" id="female">
+		</div>
+
+		
+		<input type="submit" name="submit">
+	</form>
+</body>
+</html>
