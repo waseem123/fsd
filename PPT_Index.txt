@@ -1,0 +1,15 @@
+1. Introduction
+	a. Explain about project
+	b. Users involved in this project
+	c. Working of project(You can include flow charts and system architectures)
+
+2. Project Category - 
+	a. RDBMS - 
+	b. OOP - 
+	c. WEB - 
+
+3. Tools / Platforms
+	Systemrequirements.txt
+
+4. Technology Stack
+	technology_stack.txt
