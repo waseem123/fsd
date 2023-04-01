@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Forms</title>
+</head>
+<body>
+	<form action="google.com" method="get">
+		<div>
+			<label>First Name</label>
+			<input type="text" name="fname" placeholder="First Name">
+			<label>Last Name</label>
+			<input type="text" name="lname" placeholder="Last Name">
+		</div>
+		<div>
+			<input type="number" name="mobileno" placeholder="Mobile Number">
+		</div>
+		<div>
+			<input type="email" name="email" placeholder="Email">
+		</div>
+		<div>
+			<input type="password" name="password" placeholder="Password">
+		</div>
+		
+		<div>
+			<input type="date" name="dob">
+		</div>
+		
+		<div>
+			<input type="time" name="time">
+		</div>
+		
+		<div>
+			<input type="file" name="profile_picture" accept=".png,.jpg,.pdf">
+		</div>
+
+		<div>
+			<label for="male">Male</label>
+			<input type="radio" name="gender" id="male">
+			<label for="female">Female</label>
+			<input type="radio" name="gender" id="female">
+		</div>
+		<div>
+			<input type="color" name="fav_color">
+		</div>
+
+		<div>
+			<select name="state">
+				<option value="">SELECT STATE</option>
+				<option value="MH">Maharashtra</option>
+				<option value="KA">Karnatka</option>
+				<option value="AP">AndhraPradesh</option>
+				<option value="BI">Bihar</option>
+				<option value="UP">Uttar Pradesh</option>
+				<option value="TG">Telangana</option>
+			</select>
+		</div>
+		<div>
+			<input type="submit" name="submit">
+		</div>
+	</form>
+</body>
+</html>
