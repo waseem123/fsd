@@ -1,0 +1,13 @@
+html,body{
+	margin: 0px;
+}
+h1{
+	color: lightgreen;
+	background: darkgray;
+	margin: 8Px;
+}
+p{
+	color: blue;
+	background: rgba(120, 130, 140,0.1);
+	margin: 8px;
+}
