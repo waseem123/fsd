@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pseudo Classes</title>
+	<style type="text/css">
+/*
+		selector:pseudo_class{
+			property:value;
+		}
+*/
+		a:link{
+			color: red;
+			text-decoration:none;
+			font-family: cursive;
+		}
+
+		a:active{
+			color: black;
+			background: purple;
+		}
+
+		a:visited{
+			color: #009A00;
+			font-family: calibri;
+		}
+
+		a:hover{
+			background: #3f7da1;
+			color: white;
+			font-size: 24px;
+			font-family: calibri;
+		}
+		div>img:hover{
+			width: 100px;
+			border:1px solid black;
+			height: 100px;
+		}
+		#p1{
+			display: none;
+		}
+		div>img:hover #p1{
+			display: block;
+		}
+
+
+	</style>
+</head>
+<body>
+	<a href="https://www.ajio.com">Ajio</a>
+	<a href="https://www.google.com">Google</a>
+	<a href="https://www.indeed.com">Indeed</a>
+
+	<div>
+		
+		<img src="spotify.png" width="150px" height="150px">
+		<p id="p1">image of spotify</p>
+	</div>
+</body>
+</html>

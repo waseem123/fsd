@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table Styling</title>
+	<style type="text/css">
+		table,th,td{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th,td{
+			padding: 8px;
+			text-align: center;
+		}
+
+		tr{
+			font-family: cursive;
+		}
+
+		tr:hover{
+			background: purple;
+			color: white;
+		}
+
+		th,td:hover{
+			background: orange;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>Roll No</th>
+					<th>Name</th>
+					<th>City</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>101</td>
+					<td>Alex</td>
+					<td>London</td>
+				</tr>
+
+				<tr>
+					<td>102</td>
+					<td>Peter</td>
+					<td>Paris</td>
+				</tr>
+				<tr>
+					<td>103</td>
+					<td>Leo</td>
+					<td>New York</td>
+				</tr>
+				<tr>
+					<td>104</td>
+					<td>Peter</td>
+					<td>LA</td>
+				</tr>
+				<tr>
+					<td>105</td>
+					<td>Roger</td>
+					<td>San Fransisco</td>
+				</tr>
+				<tr>
+					<td>106</td>
+					<td>Peter</td>
+					<td>Mumbai</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">Total 6 Students</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</body>
+</html>
