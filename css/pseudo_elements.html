@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pseudo Elements</title>
+	<style type="text/css">
+		/*selector::Pseudo_Element{
+			property:value;
+		}*/
+
+		p::first-letter{
+			font-size: 48px;
+			color: #256478;
+			background: #624578;
+		}
+
+		p::first-line{
+			background: #256478;
+			color: white;
+		}
+
+		h2::before{
+			content: url("spotify.png");
+		}
+
+		p::after{
+			content: url("spotify.png");
+		}
+
+		::marker{
+			color: green;
+		}
+
+		::selection{
+			color: white;
+			background: orange;
+			font-size: 24px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h2>Pseudo Elements</h2>
+		<p>
+			Welcome to PSEUDO ELEMENTS Tutorial. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+
+	<hr>
+
+	<div>
+		<h2>Pseudo Elements</h2>
+		<p>
+			Welcome to PSEUDO ELEMENTS Tutorial. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+
+	<div>
+		<ol>
+			<li>Computer</li>
+			<li>Mobile Phone</li>
+			<li>Smart Watch</li>
+			<li>VR Glasses</li>
+			<li>Sensors</li>
+		</ol>
+	</div>
+</body>
+</html>

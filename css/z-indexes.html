@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Z Indexes</title>
+	<style type="text/css">
+		div{
+			color: white;
+		}
+
+		#d1{
+			height: 200px;
+			padding: 8px;
+			width: 200px;
+			border: 2px solid black;
+			background: gray;
+			position: absolute;
+			z-index: 2;
+		}
+		#d2{
+			margin: 20px;
+			height: 200px;
+			padding: 8px;
+			width: 200px;
+			border: 2px solid black;
+			background: black;
+			position: absolute;
+			z-index: 1;
+		}
+
+		#d3{
+			margin: 40px;
+			height: 200px;
+			padding: 8px;
+			width: 200px;
+			border: 2px solid black;
+			background: green;
+			position: absolute;
+			z-index: 2;
+		}
+
+		#d4{
+			margin: 60px;
+			height: 200px;
+			padding: 8px;
+			width: 200px;
+			border: 2px solid black;
+			background: blue;
+			position: absolute;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div id="d1">
+		First Div
+	</div>
+
+	<div id="d2">
+		Second Div
+	</div>
+
+	<div id="d3">
+		Third Div
+	</div>
+
+	<div id="d4">
+		Fourth Div
+	</div>
+</body>
+</html>
