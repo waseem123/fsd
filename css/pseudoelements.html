@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PSeudo Elements</title>
+	<style type="text/css">
+		/*selector::pseudo-element{
+			property:value;
+		}*/
+		p::first-letter{
+			font-size: 48px;
+			color: red;
+			background: black;
+			padding: 2px;
+		}
+
+		p::first-line{
+			font-size: 24px;
+			color: red;
+			background: black;
+			padding: 2px;
+		}
+
+		h2::before{
+			content: url("spotify.png");
+		}
+		p::after{
+			content: url("spotify.png");
+		}
+
+		::marker{
+			color: red;
+		}
+
+		::selection{
+			background: lightpink;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h2>Welcome to CSS</h2>
+	<p>
+		Welcome to HTML and CSS Pseudo Elements. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.<br> Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<a href="https://www.google.com">Google</a>
+	<hr>
+	<ol>
+		<li>India</li>
+		<li>America</li>
+		<li>UAE</li>
+		<li>China</li>
+		<li>Russia</li>
+		<li>Ukrain</li>
+	</ol>
+</body>
+</html>
