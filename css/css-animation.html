@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Animations</title>
+	<style type="text/css">
+		@keyframes example{
+			from{
+				background: blue;
+				width: 200px;
+			}
+			to{
+				width: 500px;
+				background: green;
+			}
+		}
+
+		@keyframes example2{
+			0%{
+				background: blue;
+				width: 20px;
+			}
+			25%{
+				width: 40px;
+				background: green;
+			}
+
+			50%{
+				width: 80px;
+				background: yellow;
+			}
+
+
+			100%{
+				width: 200px;
+				background: red;
+			}
+		}
+
+		.default{
+			background: blue;
+			width: 200px;
+			height: 200px;
+			animation-name: example2;
+			animation-duration: 5s;
+/*			animation-delay: 2s;*/
+/*			animation-iteration-count: 4;*/
+/*			animation-direction: alternate-reverse;*/
+			animation-timing-function: cubic-bezier(10,5,1,10);
+			animation-fill-mode: both;
+		}
+
+		.animate{
+			background: blue;
+			width: 200px;
+			height: 200px;
+			
+/*			animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction;*/
+
+			animation: example 5s linear 2s infinite alternate;
+		}
+	</style>
+</head>
+<body>
+	<div class="animate"></div>
+</body>
+</html>

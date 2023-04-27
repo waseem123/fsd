@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS DISPLAY PROPERTIES</title>
+
+	<style type="text/css">
+		.mydiv{
+			width: 50%;
+			background: black;
+			color: orange;
+			margin: 20px;
+			padding: 8px;
+			border-radius: 8px;
+		}
+
+		img{
+			display: block;
+		}
+/*
+		p{
+			display: inline-block;
+		}*/
+
+		#ipodtext,#alexatext{
+			display: none;
+		}
+		div:hover p{
+			display: block;
+			color: orange;
+		}
+		#alexa:hover #alexatext{
+			display: block;
+			color: orange;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="mydiv">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+	<p>
+		this is a paragraph between the inline div and the image(image is already inline.)
+	</p>
+	
+	
+	<div>
+		<img src="../html/img/ipod.jpg" id="ipod" width="100px">
+		<p id="ipodtext">
+			This is IPOD IMAGE.
+		</p>
+	</div>
+
+	<div>
+		<img src="../html/img/alexa.jpg" id="alexa" width="100px">
+
+		<p id="alexatext">
+			This is ALEXA IMAGE.
+		</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Variables</title>
+	<style type="text/css">
+		:root{
+			--darkcolor:#bd5585;
+			--lightcolor:#e9b8ce;
+			--divwidth:250px;
+			--divpadding:8px;
+		}
+		.maindiv{
+			background: var(--darkcolor);
+			margin: 24px;
+			padding: var(--divpadding);
+			width: var(--divwidth);
+		}
+		.heading{
+			color: #FFFFFf;
+			padding: 8px;
+		}
+
+		.content{
+			color: #afdaef;
+			padding: 8px;
+		}
+		
+
+		.button{
+			--darkcolor:#000000;
+			color: var(--lightcolor);
+			background: var(--darkcolor);
+			padding: 20px;
+			border: none;
+			border-radius: 8px;
+		}
+
+		.footer{
+			background: gray;
+			padding: 8px;
+			border-width: 10px;
+			border-style: solid;
+			border-color: var(--darkcolor);
+		}
+	</style>
+</head>
+<body>
+	<div class="maindiv">
+		<h2 class="heading">CSS Variables</h2>
+		<p class="content">
+			CSS variables are responsible to store the values in a specific element so that we can reuse it throughout the webpage.
+		</p>
+		<div class="footer">
+			<button class="button">Ok</button>
+		</div>
+	</div>
+
+	<div class="maindiv">
+		<h2 class="heading">CSS Variables</h2>
+		<p class="content">
+			CSS variables are responsible to store the values in a specific element so that we can reuse it throughout the webpage.
+		</p>
+		<div class="footer">
+			<button class="button">Ok</button>
+		</div>
+	</div>
+</body>
+</html>

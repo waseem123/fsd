@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hero Image</title>
+	<style type="text/css">
+		html,body{
+			margin: 0px;
+			height: 100%;
+		}
+		.container{
+			width: 100%;
+		}
+		.hero{
+			background-image: url("../html/img/iphone.jpg");
+			background-size: cover;
+			height: 100vh;
+
+		}
+
+		.formdiv{
+			width: 50%;
+			position: absolute;
+			padding: 20px;
+			top: 50%;
+			background:rgba(0, 0, 0, 0.5);
+		}
+		.formdiv h2{
+			text-align: center;
+			font-family: calibri;
+		}
+		.input{
+			width: 100%;
+			height: 30px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="hero"></div>
+		<div class="formdiv">
+			<h2>Login</h2>
+			<form>
+				<div>
+					<input type="email" name="email" class="input">
+				</div>
+				<div>
+					<input type="password" name="password" class="input">
+				</div>
+			</form>	
+		</div>
+	</div>
+</body>
+</html>
