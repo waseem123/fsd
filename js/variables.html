@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Variables</title>
+</head>
+<body>
+	<h2>Variable declaration rules.</h2>
+	<ul>
+		<li>It starts with character only</li>
+		<li>It does not contain any space, newline or tabs</li>
+		<li>It does not allow special characters except Underscore(_)</li>
+		<li>It can not be taken from keyword or system defined word</li>
+		<li>Generally variables are case sensitive</li>
+		<li>Its always a good practice to give meaningful name to variables</li>
+	</ul>
+</body>
+<script type="text/javascript">
+	console.log(first_number*second_number)
+	var first_number=10;
+	var second_number="20";
+	
+	
+	let data = 500;
+	console.log(data)
+
+	function printData() {
+		let data = 300;
+		first_number = 2222;
+		console.log(first_number)
+		console.log(data);
+	}
+	printData()
+	console.log(data)
+	console.log(first_number)
+</script>
+</html>
