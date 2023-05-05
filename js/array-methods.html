@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Methods</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var myarr = ["Lamborghini","Ferrari","Nissan","Toyota","Tata"]
+	var cars2=["Fiat","Mahindra","Suzuki","Volkswagen","MG","KIA","Hyundai"]
+	console.log(myarr)
+	console.log(myarr.toString())
+	console.log(myarr.join("-"))
+
+	console.log(myarr.pop())
+	console.log(myarr)
+	console.log(myarr.push("Hyundai"))
+	console.log(myarr)
+
+	console.log(myarr.shift());
+	console.log(myarr)
+
+	console.log(myarr.unshift("Lamborghini"))
+	console.log(myarr)
+	delete myarr[5]
+	console.log(myarr)
+
+	
+	console.log(myarr.concat("Jaguar"))
+	console.log(myarr)
+
+	const myArr = [[1,2],[3,4],[5,6]];
+	const newArr = myArr.flat();
+	console.log(newArr)
+
+	console.log(myarr)
+	// myarr.splice(1,5,"Fiat","Mahindra")
+	console.log(myarr)
+
+	let newarr = myarr.slice(4,0)
+	console.log(newarr)
+</script>
+</html>

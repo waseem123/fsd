@@ -1,0 +1,24 @@
+<script type="text/javascript">
+	function isPrime(num)	{
+		let flag = true;
+
+		for (var i = 2; i<num; i++) {
+			if(num%i==0){
+				flag = false
+				break;
+			}
+		}
+
+		return flag
+	}
+
+	if(isPrime(6)){
+		console.log("ITS A PRIME NUMBER")
+	}else{
+		console.log("ITS NOT A PRIME NUMBER")
+	}
+</script>
+
+
+ <!-- num=6, flag=true, i=2 -->
+

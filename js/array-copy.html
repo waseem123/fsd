@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Copy</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	let arr1 = ["Mohsina","Swati","Shakunti","Pallavi","Geeta","Manojkumar","Shubham","Waseem"];
+	console.log(arr1)
+
+	let arr2 = arr1
+	console.log(arr2)
+	console.log("Shallow Copy")
+	arr1[5] = "Manoj"
+	console.log(arr1)
+	console.log(arr2)
+
+	arr2[7] = "Waseem Attar"
+	console.log(arr1)
+	console.log(arr2)
+
+	console.log("Deep Copy")
+	let arr3 = []
+	for (var i = 0; i < arr1.length; i++) {
+		arr3[i] = arr1[i]
+	}
+	console.log(arr3)
+
+	arr1[5] = "Manoj Gajul"
+	console.log(arr1)
+	console.log(arr3)
+
+	arr3[7] = "Waseem"
+	console.log(arr1)
+	console.log(arr3)
+
+	
+</script>
+</html>

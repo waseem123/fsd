@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arrays in JS</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	let numbers = [100,200,300,400,500]
+	console.log(typeof(numbers))
+	console.log(numbers);
+	console.log(numbers.length)
+
+
+	let mobilephones=[]
+	console.log(typeof(mobilephones))
+	mobilephones[0] = "OnePlus"
+	mobilephones[1] = "Samsung"
+	mobilephones[2] = "iPhone"
+	mobilephones[3] = "Pixel"
+	console.log(mobilephones)
+
+	let socialmedia = new Array("Facebook","Instagram","Twitter","LinkedIn","Snapchat");
+	console.log(typeof(socialmedia));
+	console.log(socialmedia)
+
+	let student = [
+				{"rollno":"101",
+				"name":"Waseem",
+				"city":"Solapur"}
+				]
+	console.log(student)
+
+
+	console.log(numbers[0])
+	console.log(numbers[1])
+	console.log(numbers[2])
+	console.log(numbers[3])
+	console.log(numbers[4])
+
+	for (var i = 0; i < mobilephones.length; i++) {
+		console.log(mobilephones[i])
+	}
+
+
+	for(var x in socialmedia){
+		console.log(socialmedia[x])
+	}
+
+	mobilephones[3] = "Google Pixel"
+	console.log(mobilephones)
+
+	mobilephones.push("Vivo");
+	console.log(mobilephones);
+
+	mobilephones[mobilephones.length] = "Oppo";
+	console.log(mobilephones);
+
+	mobilephones[40] = "Nothing Phone"
+	console.log(mobilephones)
+
+</script>
+</html>

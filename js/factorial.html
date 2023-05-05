@@ -1,0 +1,35 @@
+<script type="text/javascript">
+	function factorial(n){
+		if(n==1)
+			return 1
+		else
+			return n*factorial(n-1)
+	}
+
+	console.log(factorial(6))
+</script>
+
+<script type="text/javascript">
+	function displayName(n) {
+		if(n>0){
+			console.log("Waseem")
+			displayName(n-1)
+		}
+	}
+
+	displayName(10)
+</script>
+
+
+<!-- 5!
+5x4!
+4!
+4x3!
+3!
+3x2!
+2
+2X1!
+1!
+1
+
+factorial(n) = n*factorial(n-1) -->
