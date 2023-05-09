@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM-Page manipulations</title>
+</head>
+<body>
+	<h2>DOM Operations</h2>
+	<p id="p1">
+		Welcome to JS TUTORIAL.
+	</p>
+
+	<ul>
+		<li>Elephant</li>
+		<li>Lion</li>
+		<li>Monkey</li>
+		<li>Dog</li>
+		<li>Cat</li>
+		<li>Dear</li>
+		<li>Rabbit</li>
+	</ul>
+
+	<ol id="animal_list"></ol>
+
+	<fieldset>
+		<legend>Personal Information</legend>
+		<input type="text" name="firstname" id="firstname" placeholder="First Name">
+		<input type="text" name="lastname" id="lastname" placeholder="Last Name">
+		<button id="show_full_name" onclick="showFullName()"> SHOW FULL NAME </button>
+		<p id="fullname"></p>
+	</fieldset>
+
+	<fieldset>
+		<legend>Addition</legend>
+		<input type="text" name="firstnum" id="firstnum" placeholder="First Number">
+		<input type="text" name="secondnum" id="secondnum" placeholder="Second Number">
+		<button id="show_addition" onclick="showAddition()"> SHOW Addition</button>
+		<p id="result"></p>
+	</fieldset>
+</body>
+<script type="text/javascript">
+	document.getElementById("p1").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+	var animals = document.getElementsByTagName("ul")
+
+	console.log(animals[0].innerHTML)
+
+	document.getElementById("animal_list").innerHTML=animals[0].innerHTML;
+</script>
+
+<script type="text/javascript">
+	function showFullName(){
+		var fname = document.getElementById("firstname").value;
+		var lname = document.getElementById("lastname").value;
+		document.getElementById("fullname").innerHTML = "My name is "+fname+" "+lname;
+	}
+
+	function showAddition(){
+		var fnum = parseInt(document.getElementById("firstnum").value);
+		var snum = parseInt(document.getElementById("secondnum").value);
+		var result = fnum+snum;
+		document.getElementById("result").innerHTML = "Addition is "+result;
+	}
+	
+</script>
+</html>

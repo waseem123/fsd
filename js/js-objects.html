@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Objects</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var myobject = {
+		"firstname":"Alex",
+		"lastname":"Pierce",
+		"age":25,
+		"mobileno":9096288255};
+
+	console.log(myobject)
+	console.log(myobject["lastname"])
+	console.log(myobject["age"])
+
+	console.log(myobject.mobileno)
+	console.log(myobject.length)
+
+	for(var i in myobject){
+		console.log(i+"->"+myobject[i]);
+	}
+
+	// JSON - JavaScript Object Notation
+	var stringobj = JSON.stringify(myobject)
+	console.log(stringobj)
+	let jsonobj = JSON.parse(stringobj)
+	console.log(jsonobj)
+	console.log(jsonobj['firstname'])
+
+	var students=[
+		{
+			"firstname":"Alex",
+			"lastname":"Pierce",
+			"age":25,
+			"mobileno":9096288255
+		},
+
+		{
+			"firstname":"John",
+			"lastname":"Pierce",
+			"age":27,
+			"mobileno":9096288255
+		},
+
+		{
+			"firstname":"Robert",
+			"lastname":"Pierce",
+			"age":23,
+			"mobileno":9096288255
+		}
+	];
+
+	console.log(students)
+
+	for(var student in students){
+		console.log(student+"->"+JSON.stringify(students[student]))
+	}
+
+	for(var i=0;i<students.length;i++){
+		for(var j in students[i]){
+			console.log(students[i][j])
+		}
+	}
+</script>
+</html>

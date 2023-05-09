@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Equality</title>
+</head>
+<body>
+	<div>
+		== is the symbol used to compare two different data values. It returns <code>true</code> if the values are equal irrespective of their datatype.
+
+		This comparison is also known as <b>Loosly Equal</b>
+	</div>
+	
+	<div>
+		=== is the symbol used to compare two different data values. It returns <code>true</code> if the values are equal as well as their datatypes are also equal.
+		This comparison is also known as <b>Tightly Equal</b>
+	</div>
+	
+</body>
+</html>
+
+<script type="text/javascript">
+	var x = 100
+	var y = "100"
+	var z = new String("100");
+
+	console.log(typeof(x));
+	console.log(typeof(y));
+	console.log(typeof(z));
+
+	console.log(x==y) //true
+	console.log(x==z) //true
+
+	console.log(x===y) //false
+	console.log(x===z) //false
+
+
+	console.log(y==z)
+	console.log(y===z)
+
+	console.log(y==NaN)
+	console.log(y===NaN)
+</script>
