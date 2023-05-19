@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Input Validations</title>
+</head>
+<body>
+	<input type="text" name="number" id="number">
+	<button id="btn_submit">Submit</button>
+	<p id="validation"></p>
+</body>
+<script type="text/javascript">
+	var btn_submit = document.getElementById("btn_submit");
+	btn_submit.addEventListener("click",function(){
+		var num = document.getElementById("number").value;
+
+		if(num!=NaN && num>=1 && num<=10){
+			document.getElementById("validation").innerHTML = "DATA IS VALID"
+		}else{
+			document.getElementById("validation").innerHTML = "DATA IS INVALID"
+		}
+	})
+</script>
+</html>

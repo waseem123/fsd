@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<button id="btn_delete">Delete</button>
+	<button id="btn_prompt">Prompt</button>
+</body>
+<script type="text/javascript">
+	// alert("Welcome to the website");
+	var btn_delete= document.getElementById("btn_delete");
+	btn_delete.addEventListener("click",function(){
+		var action = confirm("Do you really want to delete this data? Once you delete you can not get it back.")
+		if(action==true){
+			alert("Data deleted successfully")
+		}else{
+			alert("Operation cancelled by user.")
+		}
+	})
+
+	var btn_prompt = document.getElementById("btn_prompt");
+	btn_prompt.addEventListener("click",function(){
+		var data = window.prompt("Enter your name","Alex","required")
+		console.log(data)
+	})
+</script>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Element Visibility</title>
+	<style type="text/css">
+		div{
+			border: 1px solid black;
+			height: 300px;
+			width: 25%;
+			overflow: hidden;
+			margin: 20px;
+			float: left;
+			text-align: center;
+		}
+		div>img{
+			width: 100%;
+			height: auto;
+		}
+
+		div>p{
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="iphone">
+		<img src="../html/img/iphone.jpg">
+		<p id="caption_iphone">Image of IPHONE</p>
+	</div>
+
+	<div id="camera">
+		<img src="../html/img/camera.jpg">
+		<p id="caption_camera">Image of CAMERA</p>
+	</div>
+
+	<div id="spotify" >
+		<img src="../html/img/spotify.png">
+		<p id="caption_spotify">Image of SPOTIFY</p>
+	</div>
+</body>
+<script type="text/javascript">
+	var iphone = document.getElementById("iphone");
+	var camera = document.getElementById("camera");
+	var spotify = document.getElementById("spotify");
+
+	var caption_iphone=document.getElementById("caption_iphone");
+	var caption_camera= document.getElementById("caption_camera");
+	var caption_spotify=document.getElementById("caption_spotify");
+
+	iphone.addEventListener("mouseover",function(){
+		caption_iphone.style.display="block"
+		caption_camera.style.display="none"
+		caption_spotify.style.display="none"
+	});
+
+	iphone.addEventListener("mouseout",function(){
+		caption_iphone.style.display="none"
+		caption_camera.style.display="none"
+		caption_spotify.style.display="none"
+	});
+
+	camera.addEventListener("mouseover",function(){
+		caption_iphone.style.display="none"
+		caption_camera.style.display="block"
+		caption_spotify.style.display="none"
+	});
+	camera.addEventListener("mouseout",function(){
+		caption_iphone.style.display="none"
+		caption_camera.style.display="none"
+		caption_spotify.style.display="none"
+	});
+
+	spotify.addEventListener("mouseover",function(){
+		caption_iphone.style.display="none"
+		caption_camera.style.display="none"
+		caption_spotify.style.display="block"
+	});
+	spotify.addEventListener("mouseout",function(){
+		caption_iphone.style.display="none"
+		caption_camera.style.display="none"
+		caption_spotify.style.display="none"
+	});
+</script>
+</html>

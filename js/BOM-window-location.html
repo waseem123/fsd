@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Window Location</title>
+</head>
+<body>
+	<input type="text" name="url" id="url">
+	<button id="btn_go">Go</button>
+</body>
+
+<script type="text/javascript">
+	var btn_go = document.getElementById("btn_go");
+	btn_go.addEventListener("click",function(){
+		var url = document.getElementById("url").value;
+		window.location.href = url;
+
+	})
+	/*var url = window.location.href;
+	window.location.href = "arrays.html"
+	console.log(url)
+	console.log(url.href);
+	console.log(url.origin)*/
+</script>
+</html>

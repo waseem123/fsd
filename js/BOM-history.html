@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BOM History</title>
+</head>
+<body>
+	<button id="btn_previous">Previous</button>
+	<button id="btn_next">Next</button>
+</body>
+<script type="text/javascript">
+	var btn_previous = document.getElementById("btn_previous");
+	btn_previous.addEventListener("click",function(){
+		window.history.back()
+	})
+
+
+	var btn_next = document.getElementById("btn_next");
+	btn_next.addEventListener("click",function(){
+		window.history.forward()
+	})
+</script>
+</html>

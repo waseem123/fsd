@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Styling</title>
+</head>
+<body>
+	<div id="d1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+	<button id="btn_background">Change Background</button>
+
+	<button id="btn_typography">Change Typography</button>
+</body>
+<script type="text/javascript">
+	var btn_background = document.getElementById("btn_background");
+	var btn_typography = document.getElementById("btn_typography");
+	var d1 = document.getElementById("d1");
+	btn_background.addEventListener("click",function(){
+		d1.style.background="#9a2b3c";
+		d1.style.margin="24px";
+		d1.style.padding="24px";
+		d1.style.color="white";
+	});
+
+	btn_typography.addEventListener("click",function(){
+		d1.style.fontFamily="Calibri";
+		d1.style.fontSize="24px";
+		d1.style.letterSpacing="1px";
+		d1.style.fontStyle="Italic";
+	})
+</script>
+</html>

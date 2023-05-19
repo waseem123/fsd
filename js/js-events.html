@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS EVENTS</title>
+	<style type="text/css">
+		.mydiv{
+			background: #901020;
+			color: #ffffff;
+			width: 300px;
+			height: 300px;
+			font-family: calibri;
+			font-size: 24px;
+			padding: 20px;
+			border-radius: 20px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body onload="changeText('WELCOME TO JS EVENTS')">
+	<div id="d1" class="mydiv">
+		Click Event
+	</div>
+	<button onclick="changeText('Clicked for 1 time')">Click Me</button>
+
+	<button ondblclick="changeText('Clicked for 2 times')">Double Click Me</button>
+	<hr>
+
+	<div id="d2" class="mydiv" onmouseover="changeData('Mouse Over','The pointer is moved onto an element')" onmouseout="changeData('Mouse Out','The pointer is moved out of an element')">
+		<p id="p1">Mouse Over and Mouse Out</p>
+		<p id="demo"></p>
+	</div>
+	<hr>
+	<div id="d3" class="mydiv" onmousedown="displayData(this,'Clicked on Me')" onmouseup="displayData(this,'Click Event Finished')">
+		The onmousedown and onmouseup Event
+	</div>
+	
+</body>
+<script type="text/javascript">
+	function changeText(message){
+		document.getElementById("d1").innerHTML = message
+	}
+
+	function changeData(heading,message){
+		document.getElementById("p1").innerHTML = heading
+		document.getElementById("demo").innerHTML = message
+	}
+
+	function displayData(element,message){
+		element.innerHTML = message
+	}
+	
+</script>
+</html>

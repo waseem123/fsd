@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM Collections</title>
+	<style type="text/css">
+		img{
+			width: 50%;
+			height: 250px;
+		}
+
+		.divstyle{
+			background: orange;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		This is Paragraph 1
+	</p>
+	<p>
+		This is Paragraph 2
+	</p>
+	<p>
+		This is Paragraph 3
+	</p>
+	<p>
+		This is Paragraph 4
+	</p>
+	<p>
+		This is Paragraph 5
+	</p>
+	<div id="d1">
+		<div class="divstyle">
+			<img src="../html/img/alexa.jpg">
+			<img src="../html/img/alexa.jpg">
+			<img src="../html/img/alexa.jpg">
+		</div>
+		<div>
+			<img src="../html/img/alexa.jpg">
+			<img src="../html/img/alexa.jpg">
+			<img src="../html/img/alexa.jpg">
+		</div>
+		<div class="divstyle">
+			<img src="../html/img/alexa.jpg">
+			<img src="../html/img/alexa.jpg">
+			<img src="../html/img/alexa.jpg">
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var collection = document.getElementsByTagName("p");
+	console.log(collection);
+	console.log(collection.length);
+
+	for (var i = 0; i < collection.length; i++){
+		collection[i].style.background="#00FF00";
+		collection[i].style.padding = "8px"
+		collection[i].style.width = "25%"
+	}
+
+	var divcollection = document.getElementsByTagName("div");
+	console.log(divcollection);
+
+	divcollection[3].style.width="25%";
+
+	var children = divcollection[2].childNodes;
+	console.log(children);
+
+	var paragraphs = document.querySelectorAll("p");
+	console.log(paragraphs)
+	console.log(paragraphs.length)
+	/*for (var i in paragraphs) {
+		paragraphs[i].style.background = "#3a2B9c"
+		paragraphs[i].style.color = "#ffffff"
+	}*/
+
+	var divs = document.getElementsByClassName("divstyle");
+	console.log(divs)
+</script>
+</html>
